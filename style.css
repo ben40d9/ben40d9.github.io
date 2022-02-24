@@ -1,67 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-* {
-    
+#content {
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 5%;
+
 }
 
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh; 
-    margin: 0;
-    overflow: hidden;
-    background-color: #A30b37;
-    font-family: 'Press Start 2P', cursive;
-    color: purple;
-}
-
-.container {
-    display: flex;
-    width: 90vw; 
-}
-
-.panel {
-    background-size: cover; 
+    background: url(https://images.unsplash.com/photo-1415369629372-26f2fe60c467?dpr=2&fit=crop&fm=jpg&h=775&q=50&w=1450);
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: 50px;
-    flex: 0.5;
-    height: 80vh; 
-    margin: 10px;
-    transition: 0.7s ease-in;
     color: white;
-    position: relative; 
-    
 }
 
-.panel.active {
-    flex: 5;
-    color: white;
-    font-size: 20px;
+h1{
+    font-weight: 700;
+    font-size: 5em;
 }
 
-.panel h3 {
-    font-size: 90px;
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    margin: 0;
-    color:purple;
-    opacity: 0;
+html {
+    height: 100%;
 }
 
-.panel.active h3 {
-    opacity: 1;
-    transition: opacity 0.3s ease-in 0.4s;
+hr {
+    width: 400px;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,.2);
 }
 
-@media (max-width: 480px) {
-    .container {
-        width: 100vw;
-    }
+.white {
+    color: #f8f8f8;
 }
 
-.panel {
-    background-image: url('https://pbs.twimg.com/media/FJ-KtVzVUAYAJ2R?format=jpg&name=large');
+button {
+    background-color: white;
+    color: black;
 }
-
