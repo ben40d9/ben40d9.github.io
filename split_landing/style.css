@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+* {
+    
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+    margin: 0;
+    overflow: hidden;
+    background-color: #A30b37;
+    font-family: 'Press Start 2P', cursive;
+    color: purple;
+}
+
+.container {
+    display: flex;
+    width: 90vw; 
+}
+
+.panel {
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    flex: 0.5;
+    height: 80vh; 
+    margin: 10px;
+    transition: 0.7s ease-in;
+    color: white;
+    position: relative; 
+    
+}
+
+.panel.active {
+    flex: 5;
+    color: white;
+    font-size: 20px;
+}
+
+.panel h3 {
+    font-size: 90px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    color:purple;
+    opacity: 0;
+}
+
+.panel.active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100vw;
+    }
+}
+
+.panel {
+    background-image: url('https://pbs.twimg.com/media/FJ-KtVzVUAYAJ2R?format=jpg&name=large');
+}
+
