@@ -1,14 +1,9 @@
-const panels = document.querySelectorAll('.panel')
+const left = document.querySelector('.left');
+const right = document.querySelector('.right');
+const container = document.querySelector('.container');
 
-panels.forEach(panel => {
-    panel.addEventListener('click', () => {
-        removeActiveClasses()
-        panel.classList.add('active')
-    })
-})
+left.addEventListener('mouseenter', () => container.classList.add('hover-left'))
+left.addEventListener('mouseleave', () => container.classList.remove('hover-left'))
 
-function removeActiveClasses() {
-    panels.forEach(panel => {
-        panel.classList.remove('active')
-    })
-}
+right.addEventListener('mouseenter', () => container.classList.add('hover-right'))
+right.addEventListener('mouseleave', () => container.classList.remove('hover-right'))
